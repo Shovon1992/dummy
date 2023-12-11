@@ -140,7 +140,7 @@
                   <div class="card-body">
                     <div class="row no-gutters align-items-center">
                       <div class="col mr-2">
-                        <div class="col-auto" style="position: absolute; top: 4em">
+                        <div class="col-auto" style="position: absolute; top: 1.5em; left: 1em">
                           <img
                             class="img-fluid"
                             style="height: 4em !important"
@@ -149,14 +149,16 @@
                         </div>
                         <div
                           class="col-auto"
-                          style="position: absolute; margin-left: 11em; top: 4em">
+                          style="position: absolute; m: 10em; left: 11em; top: 1.5em">
                           <img
                             class="img-fluid"
                             style="height: 4em !important"
                             src="https://raw.githubusercontent.com/Shovon1992/dummy/main/right.png"
                             alt="..." />
                         </div>
-                        <div class="col-auto" style="position: absolute; top: 0em; left: 5.5em">
+                        <div
+                          class="col-auto"
+                          style="position: absolute; top: -1em; left: 6em; /* left: 6.5em; */">
                           <img
                             class="img-fluid"
                             style="height: 4em !important"
@@ -165,12 +167,37 @@
                         </div>
                         <div
                           class="col-auto"
-                          style="position: absolute; top: 7em; top: 8em; left: 5.5em">
+                          style="position: absolute; top: 7em; top: 7em; top: 4em; left: 6em">
                           <img
                             class="img-fluid"
                             style="height: 4em !important"
                             src="https://raw.githubusercontent.com/Shovon1992/dummy/main/down.png"
                             alt="..." />
+                        </div>
+                        <div
+                          class="row no-gutters align-items-center"
+                          style="
+                            position: absolute; /* border-top: 1px solid #c0bbbb; */ /* margin-top: 1em; */ /* padding-top: 1em; */
+                            width: 100%;
+                            top: 10em;
+                          ">
+                          <div class="col mr-2">
+                            <div
+                              class="text-xs font-weight-bold text-info text-uppercase mb-1"
+                              style="font-size: 0.8rem; font-weight: bold !important">
+                              Robot Speed
+                            </div>
+
+                            <input
+                              type="range"
+                              class="slider"
+                              id="speed"
+                              min="0"
+                              max="255"
+                              value="255"
+                              onchange="try{fetch(document.location.origin+'/control?var=speed&amp;val='+this.value);}catch(e){}"
+                              style="width: 100%" />
+                          </div>
                         </div>
                       </div>
                     </div>
