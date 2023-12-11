@@ -133,7 +133,7 @@
               </div>
             </div>
 
-            <div class="row" style="height: 16em;">
+            <div class="row" style="height: 16em">
               <!-- Earnings (Monthly) Card Example -->
               <div class="col-xl-4 col-md-4 mb-4" style="width: 50%">
                 <div class="card shadow h-100 py-2">
@@ -176,62 +176,131 @@
                     </div>
                   </div>
                 </div>
-                </div>
+              </div>
 
-                <!-- Earnings (Monthly) Card Example -->
-                <div class="col-xl-4 col-md-4 mb-4" style="width: 50%">
-                  <div class="card shadow h-100 py-2">
-                    <div class="card-body">
-                      <div class="row no-gutters align-items-center">
-                        <div class="col mr-2">
-                          <div
-                            class="text-xs font-weight-bold text-info text-uppercase mb-1"
-                            style="font-size: 0.8rem; font-weight: bold !important">
-                            Humidity
-                          </div>
-                          <div class="row no-gutters align-items-center">
-                            <div class="col-auto">
-                              <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
+              <!-- Earnings (Monthly) Card Example -->
+              <div class="col-xl-4 col-md-4 mb-4" style="width: 50%">
+                <div class="card shadow h-100 py-2">
+                  <div class="card-body">
+                    <div class="row no-gutters align-items-center" style="display: none">
+                      <div class="col mr-2">
+                        <div class="row no-gutters align-items-center">
+                          <div class="col-auto">
+                            <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">
+                              Normal Atmosphere
                             </div>
                           </div>
                         </div>
-                        <div class="col-auto">
-                          <img
-                            class="img-fluid"
-                            style="height: 3em !important"
-                            src="https://raw.githubusercontent.com/Shovon1992/dummy/main/humidity.png"
-                            alt="..." />
+                      </div>
+                      <div class="col-auto">
+                        <img
+                          class="img-fluid"
+                          style="height: 3em !important"
+                          src="https://raw.githubusercontent.com/Shovon1992/dummy/main/good-feedback.png"
+                          alt="..." />
+                      </div>
+                    </div>
+
+                    <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                        <div class="row no-gutters align-items-center">
+                          <div class="col-auto">
+                            <div
+                              class="h5 mb-0 mr-3 font-weight-bold text-gray-800"
+                              style="color: red !important">
+                              Danger
+                            </div>
+                          </div>
                         </div>
+                      </div>
+                      <div class="col-auto">
+                        <img
+                          class="img-fluid"
+                          style="height: 3em !important"
+                          src="https://raw.githubusercontent.com/Shovon1992/dummy/main/danger.png"
+                          alt="..." />
+                      </div>
+                    </div>
+
+                    <div
+                      class="row no-gutters align-items-center"
+                      style="border-top: 1px solid #c0bbbb; margin-top: 1em; padding-top: 1em">
+                      <div class="col mr-2">
+                        <div
+                          class="text-xs font-weight-bold text-info text-uppercase mb-1"
+                          style="font-size: 0.8rem; font-weight: bold !important">
+                          Headlight
+                        </div>
+                        <div class="row no-gutters align-items-center">
+                          <div class="col-auto">
+                            <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-auto">
+                        <input
+                          type="checkbox"
+                          id="vehicle1"
+                          name="vehicle1"
+                          value="Bike"
+                          style="
+                            /* height: 3em; */
+                            height: 25px;
+                            width: 25px;
+                            background-color: #eee;
+                          " />
+                      </div>
+                    </div>
+
+                    <div
+                      class="row no-gutters align-items-center"
+                      style="border-top: 1px solid #c0bbbb; margin-top: 1em; padding-top: 1em">
+                      <div class="col mr-2">
+                        <div
+                          class="text-xs font-weight-bold text-info text-uppercase mb-1"
+                          style="font-size: 0.8rem; font-weight: bold !important">
+                          Camera
+                        </div>
+
+                        <input
+                          type="range"
+                          class="slider"
+                          id="speed"
+                          min="0"
+                          max="255"
+                          value="255"
+                          onchange="try{fetch(document.location.origin+'/control?var=speed&amp;val='+this.value);}catch(e){}"
+                          style="width: 100%" />
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- /.container-fluid -->
           </div>
-          <!-- End of Main Content -->
-
-          <!-- Footer -->
-          <footer class="sticky-footer bg-white">
-            <div class="container my-auto">
-              <div class="copyright text-center my-auto">
-                <span>Application developed by Shovon Mondal</span>
-              </div>
-            </div>
-          </footer>
-          <!-- End of Footer -->
+          <!-- /.container-fluid -->
         </div>
-        <!-- End of Content Wrapper -->
-      </div>
-      <!-- End of Page Wrapper -->
+        <!-- End of Main Content -->
 
-      <!-- Bootstrap core JavaScript-->
-      <script src="https://shovon1992.github.io/dummy/jquery.min.js"></script>
-      <script>
-        //   window.onload = document.getElementById("camstream").src =
-        //   window.location.href.slice(0, -1) + ":81/stream";
-      </script>
+        <!-- Footer -->
+        <footer class="sticky-footer bg-white">
+          <div class="container my-auto">
+            <div class="copyright text-center my-auto">
+              <span>Application developed by Shovon Mondal</span>
+            </div>
+          </div>
+        </footer>
+        <!-- End of Footer -->
+      </div>
+      <!-- End of Content Wrapper -->
     </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="https://shovon1992.github.io/dummy/jquery.min.js"></script>
+    <script>
+      //   window.onload = document.getElementById("camstream").src =
+      //   window.location.href.slice(0, -1) + ":81/stream";
+    </script>
   </body>
 </html>
